@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!-- Declares the document as an HTML5 document -->
+
+<html lang="en">
+<!-- The root element of the HTML document, with language set to English -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding as UTF-8 to support special characters and multiple languages -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper responsive behavior by setting the viewport width to the device width and initial zoom level to 1 -->
+
+    <title>Calculator</title>
+    <!-- The title of the webpage, displayed on the browser tab -->
+
+    <link rel="stylesheet" href="style.css">
+    <!-- Links the external CSS file for styling the calculator -->
+
+</head>
+
+<body>
+
+    <div class="calculator">
+        <!-- A container div that holds the entire calculator layout -->
+
+        <input type="text" id="display" disabled>
+        <!-- An input field to display user input and calculation results; 'disabled' prevents manual input -->
+
+        <div class="buttons">
+            <!-- A div that contains all the calculator buttons -->
+
+            <!-- First row: Clear, Delete, Percentage, Division -->
+            <button onclick="clearDisplay()" class="operator">C</button>
+            <!-- Calls clearDisplay() function to reset the display -->
+
+            <button onclick="deleteLast()" class="operator">DEL</button>
+            <!-- Calls deleteLast() function to remove the last character from the display -->
+
+            <button onclick="appendCharacter('%')" class="operator">%</button>
+            <!-- Calls appendCharacter('%') to add '%' to the display -->
+
+            <button onclick="appendCharacter('/')" class="operator">/</button>
+            <!-- Calls appendCharacter('/') to add division symbol to the display -->
+
+
+            <!-- Second row: Numbers 7-9 and Multiplication -->
+            <button onclick="appendCharacter('7')">7</button>
+            <!-- Calls appendCharacter('7') to add '7' to the display -->
+
+            <button onclick="appendCharacter('8')">8</button>
+            <!-- Calls appendCharacter('8') to add '8' to the display -->
+
+            <button onclick="appendCharacter('9')">9</button>
+            <!-- Calls appendCharacter('9') to add '9' to the display -->
+
+            <button onclick="appendCharacter('*')" class="operator">×</button>
+            <!-- Calls appendCharacter('*') to add multiplication symbol to the display -->
+
+
+            <!-- Third row: Numbers 4-6 and Subtraction -->
+            <button onclick="appendCharacter('4')">4</button>
+            <!-- Calls appendCharacter('4') to add '4' to the display -->
+
+            <button onclick="appendCharacter('5')">5</button>
+            <!-- Calls appendCharacter('5') to add '5' to the display -->
+
+            <button onclick="appendCharacter('6')">6</button>
+            <!-- Calls appendCharacter('6') to add '6' to the display -->
+
+            <button onclick="appendCharacter('-')" class="operator">−</button>
+            <!-- Calls appendCharacter('-') to add subtraction symbol to the display -->
+
+
+            <!-- Fourth row: Numbers 1-3 and Addition -->
+            <button onclick="appendCharacter('1')">1</button>
+            <!-- Calls appendCharacter('1') to add '1' to the display -->
+
+            <button onclick="appendCharacter('2')">2</button>
+            <!-- Calls appendCharacter('2') to add '2' to the display -->
+
+            <button onclick="appendCharacter('3')">3</button>
+            <!-- Calls appendCharacter('3') to add '3' to the display -->
+
+            <button onclick="appendCharacter('+')" class="operator">+</button>
+            <!-- Calls appendCharacter('+') to add addition symbol to the display -->
+
+
+            <!-- Fifth row: Zero, Decimal, Equals -->
+            <button onclick="appendCharacter('0')" class="zero">0</button>
+            <!-- Calls appendCharacter('0') to add '0' to the display; the 'zero' class makes this button wider -->
+
+            <button onclick="appendCharacter('.')">.</button>
+            <!-- Calls appendCharacter('.') to add a decimal point to the display -->
+
+            <button onclick="calculateResult()" class="equal">=</button>
+            <!-- Calls calculateResult() to evaluate the mathematical expression in the display -->
+
+
+        </div>
+        <!-- End of the buttons container -->
+
+    </div>
+    <!-- End of the calculator container -->
+
+
+    <script src="script.js"></script>
+    <!-- Links the external JavaScript file to handle the calculator's functionality -->
+
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+/* General styles for the entire page */
+body {}
+
+/* Styling for the calculator container */
+.calculator {}
+
+/* Styling for the display (input field) */
+#display {}
+
+/* Grid layout for calculator buttons */
+.buttons {}
+
+/* General styling for all buttons */
+button {}
+
+/* Changes button background on hover */
+button:hover {}
+
+/* Special styling for operator buttons (+, -, ×, ÷, %, C, DEL) */
+.operator {}
+
+/* Darker shade of orange when hovering over operator buttons */
+.operator:hover {}
+
+/* Special styling for the "=" button */
+.equal {}
+
+/* Darker green when hovering over "=" button */
+.equal:hover {}
+
+/* Styling for the "0" button */
+.zero {}

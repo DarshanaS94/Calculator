@@ -1,0 +1,134 @@
+/* General styles for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    /* Sets the font style */
+    background-color: #f4f4f4;
+    /* Light gray background color */
+
+    display: flex;
+    /* Enables flexbox for centering the calculator */
+    justify-content: center;
+    /* Centers content horizontally */
+    align-items: center;
+    /* Centers content vertically */
+
+    height: 100vh;
+    /* Makes the body take up the full viewport height */
+    margin: 0;
+    /* Removes default margin to avoid unwanted spacing */
+}
+
+/* Styling for the calculator container */
+.calculator {
+    width: 300px;
+    /* Sets the fixed width of the calculator */
+    background-color: #222;
+    /* Dark background for the calculator */
+    padding: 20px;
+    /* Adds space inside the calculator around elements */
+    border-radius: 10px;
+    /* Rounds the corners for a smooth appearance */
+
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    /* Adds a shadow for depth */
+    text-align: center;
+    /* Centers text inside the calculator */
+}
+
+/* Styling for the display (input field) */
+#display {
+    width: 90%;
+    /* Sets the width to 90% of the calculator container */
+    height: 50px;
+    /* Sets a fixed height for visibility */
+
+    font-size: 1.8rem;
+    /* Increases font size for readability */
+    text-align: right;
+    /* Aligns text (numbers) to the right */
+    padding: 10px;
+    /* Adds padding inside the input field */
+
+    border: 10px;
+    /* (Incorrect, should be border: none; or border: 1px solid) */
+    background: #333;
+    /* Dark background for the display area */
+    color: white;
+    /* Makes text color white for contrast */
+
+    border-radius: 5px;
+    /* Rounds the edges of the display field */
+    margin-bottom: 10px;
+    /* Adds space below the display */
+}
+
+/* Grid layout for calculator buttons */
+.buttons {
+    display: grid;
+    /* Enables grid layout for buttons */
+    grid-template-columns: repeat(4, 1fr);
+    /* Creates 4 equal-width columns */
+    gap: 10px;
+    /* Adds space between buttons */
+}
+
+/* General styling for all buttons */
+button {
+    width: 100%;
+    /* Makes buttons take up full width of grid cell */
+    height: 60px;
+    /* Sets a fixed height for uniform button size */
+
+    font-size: 1.5rem;
+    /* Increases font size for better visibility */
+    border: none;
+    /* Removes default button border */
+    border-radius: 5px;
+    /* Rounds the button corners */
+
+    background: #444;
+    /* Dark gray background color */
+    color: white;
+    /* White text color */
+
+    cursor: pointer;
+    /* Changes cursor to pointer on hover */
+    transition: background 0.2s;
+    /* Smooth transition effect when hovering */
+}
+
+/* Changes button background on hover */
+button:hover {
+    background: #555;
+    /* Slightly lighter gray on hover */
+}
+
+/* Special styling for operator buttons (+, -, ×, ÷, %, C, DEL) */
+.operator {
+    background: #f39c12;
+    /* Orange color for operator buttons */
+}
+
+/* Darker shade of orange when hovering over operator buttons */
+.operator:hover {
+    background: #e67e22;
+    /* Darker orange hover effect */
+}
+
+/* Special styling for the "=" button */
+.equal {
+    background: #27ae60;
+    /* Green color for equal button */
+}
+
+/* Darker green when hovering over "=" button */
+.equal:hover {
+    background: #2ecc71;
+}
+
+/* Styling for the "0" button */
+.zero {
+    grid-column: span 2;
+    /* Makes "0" button take up two columns */
+    /* Ensures that the "0" button is twice as wide as other buttons */
+}
