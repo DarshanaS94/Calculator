@@ -1,6 +1,10 @@
 /* General styles for the entire page */
 body {}
 
+.calculator {}
+
+#display {}
+
 /* tagname */
 /* .classname */
 /* #idname */

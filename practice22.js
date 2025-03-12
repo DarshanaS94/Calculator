@@ -17,3 +17,8 @@ function deleteLast() {
 function calculateResult() {
 
 }
+
+// Function to handle keyboard input
+document.addEventListener("keydown", function (event) {
+
+});

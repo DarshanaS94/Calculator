@@ -70,5 +70,4 @@ button:hover {
 
 .zero {
     grid-column: span 2;
-    /* Make '0' button double width */
 }
